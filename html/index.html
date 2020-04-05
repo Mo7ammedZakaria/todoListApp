@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2>To Do List For Today</h2>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="form-group">
+                <input type="text" id="task-input" placeholder="Add New ...">
+                <button id="add" class="btn-add">Add</button>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container">
+            <div id="slots-containers" class="slots">
+                <div class="slot">
+                    <h3 class="title">To Do</h3>
+                    <ul id="todo" class="todo">
+                    </ul>
+                </div>
+                <div class="slot">
+
+                    <h3 class="title">In Progress</h3>
+                    <ul id="inProgress" class="inProgress">
+                    </ul>
+                </div>
+                <div class="slot">
+                    <h3 class="title">Done</h3>
+                    <ul id="done" class="done">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/task.js"></script>
+    <script src="../js/store.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: cornflowerblue;
+    width: auto;
+    margin-top: 0;
+    padding: 0.4em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 0 2rem;
+    margin-bottom: 1.2em;
+}
+
+.slots {
+    padding-top: 1rem;
+}
+
+.sticky {
+    position: -webkit-sticky!important;
+    /* Safari */
+    position: sticky!important;
+    top: 0!important;
+}
+
+.slot {
+    background: #f4f4f4;
+}
+
+.container .slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.slots li {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.slots .container>div {
+    padding: 1.4rem;
+}
+
+.form-group {
+    margin-top: 1.5vh;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 0.6em 1.7em;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    /* color: ; */
+}
+
+.btn-add {
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 0.6em 1.7em;
+    background-color: gray;
+}
+
+.btn-add:hover {
+    background-color: #222;
+}
+
+.todo li, .inProgress li, .done li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    height: 75px;
+    padding: 25px;
+    overflow: hidden;
+    margin: 20px 20px 0 0;
+    word-break: break-all;
+    padding-bottom: 20%;
+    line-height: 26px;
+}
+
+.todo li {
+    background-color: gray;
+}
+
+.slot ul {
+    padding-right: 25px;
+    color: white;
+    border-radius: 5px;
+}
+
+li {
+    cursor: pointer;
+}
+
+.title {
+    background-color: teal;
+    margin-top: 0;
+    padding: 0.8em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.inProgress li {
+    background-color: #ffae1a;
+}
+
+.done li {
+    background-color: #2e8b75;
+    /* position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%); */
+}
+
+.delete {
+    position: absolute;
+    /* top: 15px;
+    right: 14px; */
+}
+
+@media(max-width: 600px) {
+    .container .slots {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .btn-add {
+        width: 100%;
+    }
+    .form-group input {
+        width: 100%;
+    }
+}
